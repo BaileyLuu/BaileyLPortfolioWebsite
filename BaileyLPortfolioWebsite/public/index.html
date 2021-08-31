@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bailey Luu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet" /> -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // typing text animation script
+            var typed = new Typed('#typed', {
+                strings: ['Hackathon Enthusiast', 'AngelHack Student Ambassador', 'Computer Security @ YU', 'Technical Lead @ GDSC YU'],
+                showCursor: true,
+                cursorChar: '|',
+                autoInsertCss: true,
+                typeSpeed: 60,
+                backSpeed: 20,
+                backDelay: 2000,
+                loop: true,
+            });
+        });
+    </script>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            /* color: #f5f6f7; */
+            color: black;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .margin {
+            margin-bottom: 20px
+        }
+
+        .bg-1 {
+            background-color: #1abc9c;
+            /* Green */
+            color: #ffffff;
+        }
+
+        .bg-2 {
+            background-color: #474e5d;
+            /* Dark Blue */
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #ffffff;
+            /* White */
+            color: #555555;
+        }
+
+        .bg-4 {
+            background-color: #2f2f2f;
+            /* Black Gray */
+            color: #fff;
+        }
+
+        .container-fluid {
+            /* margin-top: 80px; */
+            padding-top: 70px;
+            padding-bottom: 100px;
+        }
+
+        .container-fluid-2 {
+            padding-top: 90px;
+            padding-bottom: 180px;
+        }
+
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }
+
+        h2 {
+            color: black !important;
+            font-size: 50px;
+        }
+
+        .socialMedia {
+            text-decoration: none;
+            list-style: none;
+            display: inline-block;
+            padding: 10px 5px;
+        }
+
+        .socialMedia:hover {
+            filter: brightness(150%);
+        }
+
+        .up {
+            position: relative;
+            top: 0;
+            transition: top ease 0.5s;
+        }
+
+        .up:hover {
+            top: -10px;
+        }
+
+        .title:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #fff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        .title:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        .text-left {
+            /*Make sure to have both of these*/
+            margin-left: 10px;
+            margin-right: 10px;
+            overflow-x: hidden;
+        }
+
+        .icon-box {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            transition: ease-in-out 0.3s;
+            border-radius: 5px;
+
+        }
+
+        .icon-box:hover {
+            border-color: gray;
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 150px;
+            }
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            display: block;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .timeline:after,
+        .timeline:before {
+            content: " ";
+            display: table;
+        }
+
+        .timeline:after {
+            clear: both;
+        }
+
+        .timeline,
+        .timeline>li {
+            list-style: none;
+        }
+
+        .timeline>li:nth-child(even) {
+            float: left;
+            clear: left;
+        }
+
+        .timeline>li:nth-child(odd) {
+            float: right;
+            clear: right;
+        }
+
+        .timeline-line {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background-color: #eee;
+            -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+        }
+
+        .timeline-line+.timeline-item {
+            margin-top: -20px;
+        }
+
+        .timeline-group {
+            display: block;
+            position: relative;
+            margin: 20px 0;
+            text-align: center;
+            float: none !important;
+            z-index: 1;
+        }
+
+        .timeline-poster {
+            margin-top: -20px;
+        }
+
+        .timeline-poster .btn-link {
+            color: #a1aab0;
+        }
+
+        .timeline-poster .btn-link.active,
+        .timeline-poster .btn-link:active,
+        .timeline-poster .btn-link:focus,
+        .timeline-poster .btn-link:hover {
+            color: #3e5771;
+        }
+
+        .timeline-item {
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            padding: 0 30px 20px;
+        }
+
+        .timeline-item:nth-child(even):after,
+        .timeline-item:nth-child(even):before {
+            content: '';
+            position: absolute;
+            right: 19px;
+            top: 10px;
+            width: 0;
+            height: 0;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-left: 12px solid #ccc;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(even):after {
+            right: 20px;
+            top: 11px;
+            border-top: 11px solid transparent;
+            border-bottom: 11px solid transparent;
+            border-left: 11px solid #fff;
+        }
+
+        .timeline-item:nth-child(even)>.timeline-badge {
+            right: -6px;
+        }
+
+        .timeline-item:nth-child(odd):after,
+        .timeline-item:nth-child(odd):before {
+            content: '';
+            position: absolute;
+            left: 19px;
+            top: 10px;
+            width: 0;
+            height: 0;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-right: 12px solid #ccc;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(odd):after {
+            left: 20px;
+            top: 11px;
+            border-top: 11px solid transparent;
+            border-bottom: 11px solid transparent;
+            border-right: 11px solid #fff;
+        }
+
+        .timeline-item:nth-child(odd)>.timeline-badge {
+            left: -6px;
+        }
+
+        .timeline-item.block:nth-child(even),
+        .timeline-item.block:nth-child(odd) {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .timeline-item.block:nth-child(even):after,
+        .timeline-item.block:nth-child(even):before,
+        .timeline-item.block:nth-child(odd):after,
+        .timeline-item.block:nth-child(odd):before {
+            left: 50%;
+            right: auto;
+            top: -11px;
+            border: 0;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid #ccc;
+            -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+        }
+
+        .timeline-item.block:nth-child(even):after,
+        .timeline-item.block:nth-child(odd):after {
+            top: -10px;
+            border: 0;
+            border-left: 11px solid transparent;
+            border-right: 11px solid transparent;
+            border-bottom: 11px solid #fff;
+        }
+
+        .timeline-item.block:nth-child(even)>.timeline-badge,
+        .timeline-item.block:nth-child(odd)>.timeline-badge {
+            top: -28px;
+            left: 50%;
+            right: auto;
+            -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+        }
+
+        .timeline-item>.timeline-badge {
+            position: absolute;
+            top: 12px;
+            z-index: 1;
+        }
+
+        .timeline-item>.timeline-badge>a {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 2px solid #999;
+            border-radius: 24px;
+            background-color: #fff;
+            text-decoration: none;
+            transition: all ease .3s;
+        }
+
+        .timeline-item>.timeline-badge>a.active,
+        .timeline-item>.timeline-badge>a:active,
+        .timeline-item>.timeline-badge>a:focus,
+        .timeline-item>.timeline-badge>a:hover {
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+
+        .timeline-item>.timeline-panel {
+            position: relative;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .timeline-item>.timeline-panel:hover .timeline-actions {
+            display: block;
+        }
+
+        .timeline-actions {
+            display: none;
+        }
+
+        .timeline-content,
+        .timeline-footer,
+        .timeline-heading,
+        .timeline-liveliness {
+            padding: 15px;
+        }
+
+        .timeline-heading+.timeline-content {
+            padding-top: 0;
+        }
+
+        .timeline-date {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .timeline-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .timeline-embed .embed-element,
+        .timeline-embed embed,
+        .timeline-embed iframe,
+        .timeline-embed object {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        .timeline-img {
+            display: block;
+            padding: 5px 0;
+        }
+
+        .timeline-img.first {
+            margin-right: -10px;
+        }
+
+        .timeline-img.middle {
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+
+        .timeline-img.last {
+            margin-left: -10px;
+        }
+
+        .timeline-footer,
+        .timeline-liveliness,
+        .timeline-resume {
+            border-top: 1px solid #eee;
+            background-color: #fbfcfc;
+        }
+
+        .timeline-footer {
+            border-radius: 0 0 5px 5px;
+        }
+
+        .timeline-avatar {
+            margin-top: -2px;
+            margin-right: 10px;
+        }
+
+        .timeline-title {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.42857;
+            font-weight: 600;
+            color: #3e5771;
+            text-decoration: none;
+        }
+
+        .timeline-title>small {
+            display: block;
+            font-size: 12px;
+            line-height: 1.5;
+            color: #a1aab0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .timeline .media {
+            border-bottom: 1px solid #eee;
+        }
+
+        .timeline .media,
+        .timeline .media p {
+            font-size: 13px;
+        }
+
+        .timeline .media:last-child {
+            border-bottom: 0;
+        }
+
+        @media (max-width:991px) {
+            .timeline {
+                padding-left: 15px;
+            }
+
+            .timeline-line {
+                left: 15px;
+            }
+
+            .timeline-group {
+                display: inline-block;
+                margin-left: 4px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                margin-top: 0 !important;
+                padding-right: 10px;
+            }
+
+            .timeline-item.block:nth-child(even),
+            .timeline-item.block:nth-child(odd) {
+                padding-bottom: 0;
+            }
+
+            .timeline-item.block:nth-child(even):after,
+            .timeline-item.block:nth-child(even):before,
+            .timeline-item.block:nth-child(odd):after,
+            .timeline-item.block:nth-child(odd):before,
+            .timeline-item:nth-child(even):after,
+            .timeline-item:nth-child(even):before,
+            .timeline-item:nth-child(odd):after,
+            .timeline-item:nth-child(odd):before {
+                left: 19px;
+                top: 10px;
+                border: 0;
+                border-top: 12px solid transparent;
+                border-bottom: 12px solid transparent;
+                border-right: 12px solid #ccc;
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+            }
+
+            .timeline-item.block:nth-child(even):after,
+            .timeline-item.block:nth-child(odd):after,
+            .timeline-item:nth-child(even):after,
+            .timeline-item:nth-child(odd):after {
+                left: 20px;
+                top: 11px;
+                border-top: 11px solid transparent;
+                border-bottom: 11px solid transparent;
+                border-right: 11px solid #fff;
+            }
+
+            .timeline-item.block:nth-child(even)>.timeline-badge,
+            .timeline-item.block:nth-child(odd)>.timeline-badge,
+            .timeline-item:nth-child(even)>.timeline-badge,
+            .timeline-item:nth-child(odd)>.timeline-badge {
+                top: 12px;
+                left: -6px;
+                right: auto;
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+            }
+        }
+
+        @media (max-width:480px) {
+            .timeline {
+                padding: 0;
+            }
+
+            .timeline-line {
+                display: none;
+            }
+
+            .timeline-item {
+                display: block;
+                padding: 0 0 20px !important;
+            }
+
+            .timeline-item.block:nth-child(even),
+            .timeline-item.block:nth-child(odd),
+            .timeline-item:nth-child(even),
+            .timeline-item:nth-child(odd) {
+                float: none;
+                clear: both;
+            }
+
+            .timeline-item.block:nth-child(even):after,
+            .timeline-item.block:nth-child(even):before,
+            .timeline-item.block:nth-child(odd):after,
+            .timeline-item.block:nth-child(odd):before,
+            .timeline-item.timeline-poster>.timeline-badge,
+            .timeline-item:nth-child(even):after,
+            .timeline-item:nth-child(even):before,
+            .timeline-item:nth-child(odd):after,
+            .timeline-item:nth-child(odd):before {
+                display: none;
+            }
+
+            .timeline-item>.timeline-badge {
+                top: -8px !important;
+                left: 50% !important;
+                margin-left: -6px;
+            }
+        }
+
+        .wrapkit-content-rtl .timeline-avatar {
+            margin-right: 0;
+            margin-left: 10px;
+        }
+
+        .timeline-heading {
+            font-size: 20px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translate3d(0, 40px, 0)
+            }
+
+            to {
+                transform: translate3d(0, 0, 0);
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes fadeInUp {
+            from {
+                transform: translate3d(0, 40px, 0)
+            }
+
+            to {
+                transform: translate3d(0, 0, 0);
+                opacity: 1
+            }
+        }
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-fill-mode: both
+        }
+
+        .animatedFadeInUp {
+            opacity: 0
+        }
+
+        .fadeInUp {
+            opacity: 0;
+            animation-name: fadeInUp;
+            -webkit-animation-name: fadeInUp;
+        }
+
+        .button {
+            border-radius: 15px;
+            background-color: #1abc9c;
+            border: none;
+            color: black;
+            text-align: center;
+            font-size: 28px;
+            padding: 10px;
+            width: 300px;
+            height: 100px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+
+
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="60" style="overflow-x: hidden;">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default bg-4 navbar-fixed-top" id="home">
+        <div class="container navbar-right">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="#">Bailey Luu</a> -->
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" style="margin-right:10px">
+                    <li><a class="title" href="#home" style="color: #FFFFFF; font-size:20px;">Home</a></li>
+                    <li><a class="title" href="#about" style="color: #FFFFFF; font-size:20px;">About</a></li>
+                    <li><a class="title" href="#education" style="color: #FFFFFF ; font-size:20px;">Education</a></li>
+                    <li><a class="title" href="#experience" style="color: #FFFFFF ; font-size:20px;">Experience</a></li>
+                    <li><a class="title" href="#skills" style="color: #FFFFFF ; font-size:20px;">Skills</a></li>
+                    <li><a class="title" href="#projects" style="color: #FFFFFF ; font-size:20px;">Projects</a></li>
+                    <li><a class="title" href="#contact" style="color: #FFFFFF ; font-size:20px;">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center" style="margin-top: 80px;">
+        <!-- <h3 class="margin">Who Am I?</h3> -->
+
+        <img src="./profileImage.JPG" class="img-responsive img-circle " style="display:inline;" alt="profileImage"
+            width="400" height="800">
+
+
+        <div class="col-sm-5">
+            <h1 style="font-size:3em;">Bailey Luu</h1>
+            <h3 style="font-size:25px">
+                <span id="typed"></span>
+                <!--must be span in order to work-->
+            </h3>
+            <ul style="padding:0px">
+                <li class="socialMedia up"><a href="https://www.linkedin.com/in/baileyluu/" target="_blank"> <img
+                            alt="LinkedIn" title="LinkedIn" width="50px"
+                            src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"></a></li>
+                <li class="socialMedia up"><a href="https://twitter.com/bailey_luu" target="_blank"><img alt="Twitter"
+                            title="Twitter" width="70px" src="https://cdn.worldvectorlogo.com/logos/twitter-6.svg"></a>
+                </li>
+                <li class="socialMedia up"><a href="https://www.instagram.com/bailey_btl/" target="_blank"> <img
+                            alt="Instagram" title="Instagram" width="50px"
+                            src="https://image.flaticon.com/icons/png/512/2111/2111463.png"></a></li>
+                <!-- <li class="socialMedia"><a href="mailto: bailey.luu30@gmail.com"> <img alt="gmail" title="Gmail" width="57px"
+            src="https://image.flaticon.com/icons/png/512/281/281769.png"></a></li> -->
+                <li class="socialMedia up"><a href="https://github.com/BaileyLuu" target="_blank"> <img alt="Github"
+                            title="Github" width="50px"
+                            src="https://image.flaticon.com/icons/png/512/733/733609.png"></a>
+                </li>
+            </ul>
+            <button class="button"><span><a style="color:black"
+                        href="https://drive.google.com/file/d/1pIyNFuZQxDjQrIjLiU-quoEfYkemZiBY/view?usp=sharing"
+                        target="_blank">View Resume</a></span></button>
+
+        </div>
+    </div>
+
+    <!-- Second Container  bg-2  text-center-->
+    <p id="about"></p>
+    <div class="container-fluid" data-aos="fade-in">
+        <div class="text-left">
+            <h2 class="margin">About</h3><br>
+
+                <p style="font-size: 20px;">I'm a 3rd year student currently pursuing Computer Security at York
+                    University.
+                    I love to join hackathons because hackathons allow me to learn new tech concepts within a short
+                    period and build
+                    projects that solve real-world problems. The first time I got exposed to hackathon was my freshman
+                    year at university.
+                    Even since then, I am passionate to encourage people to join hackathons. </p>
+                <p style="font-size: 20px; margin-top: 20px">I'm also passionate about communities, a place to make new
+                    connections and learn new skills. Through participating in Local Hack Day and hackathons hosted by Major League Hacking,
+                    I have a chance to meet new people and learn new tech stack.
+                </p> 
+                <p style="font-size: 20px; margin-top: 20px">I was born and raised in Vietnam but currently study in Canada as an international student. Other than
+                    English, I can speak Cantonese and Vietnamese. During free time, I often translate Webtoon comics from English to Vietnamese.</p>
+                <!-- <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a> -->
+        </div>
+    </div>
+    <p id="education"></p>
+
+    <div class="container-fluid bg-1" data-aos="fade-in">
+        <div class="text-left">
+
+            <h2>Education</h2><br>
+            <p style="font-size: 30px;">Bachelor's Degree in Computer Security</p>
+                <p>Lassonde School of Engineering, York University, Toronto</p>
+                <p>September 2019 - PRESENT</p>
+                <br>
+                <p style="font-size: 20px;"><strong>Award:</strong> York University International Scholarship of Merit</p>
+                <p style="font-size: 20px;"><strong>Clubs:</strong> Google Developer Student Club, CSHub, Christian Chinese Fellowship</p>
+                <!-- <br>
+                <h3 style="font-size: 30px; font-weight: bold; color: black">ACTIVITIES</h3>
+                <ul>
+                    <li>Technical Lead at <a href="https://gdsc.community.dev/york-university/" target="_blank">Google
+                            Developer Student Club York University</a> </li>
+                    <li>Member of <a href="https://yorku.campuslabs.ca/engage/organization/cshub"
+                            target="_blank">CSHub</a>, <a href="https://www.instagram.com/ccf.york/?hl=en"
+                            target="_blank">Christian Chinese Fellowship</a> club</li>
+                </ul> -->
+            <!-- <div class="row"> -->
+            <!-- <div class="text-left" style="width:800px">
+                
+            </div> -->
+
+
+
+            <!-- </div> -->
+
+        </div>
+
+
+
+    </div>
+    <!-- <a href="#" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-search"></span> Search
+
+    </a> -->
+    <p id="experience"></p>
+    <div class="container-fluid" >
+        <div class="text-left" data-aos="fade-in">
+            <h2>Experience</h3>
+                <br>
+                <p style="font-size: 30px; font-weight: bold;">Hackathon Evangelist</p>
+                <p style="font-size:25px"><a href="https://hackthisfall.tech" target="_blank">Hack This Fall 2.0</a></p>
+                <p style="font-size:20px">August 2021 - Present</p>
+                <ul>
+                    <li>Spread the word about the event and encourage hackers to get involved in the hackathon</li>
+                    <li>Actively participate in various events hosted</li>
+                    <li>Engage with Hacker Community and help other hacker community members by giving advice and
+                        answering nontechnical and technical questions</li>
+                </ul>
+
+                <br>
+                <p style="font-size: 30px; font-weight: bold;">Judge</p>
+                <p style="font-size:25px"><a href="https://techacks-2.devpost.com" target="_blank">TecHacks 2.0</a></p>
+                <p style="font-size:20px">August 2021</p>
+                <ul>
+                    <li>Judged 82 submissions at the hackathon </li>
+                </ul>
+
+                <br>
+                <p style="font-size: 30px; font-weight: bold;">Mentor</p>
+                <p style="font-size:25px"><a
+                        href="https://www.canva.com/design/DAElizzJjW8/Ebt44H6Km-s440pPO9epSQ/view?utm_content=DAElizzJjW8&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
+                        target="_blank">Go Code Girl 2021</a></p>
+                <p style="font-size:20px">March 2021</p>
+                <ul>
+                    <li>Taught middle school students and high school students about Sustainable Development Goal and
+                        guided students on how to solve current global crisis through coding</li>
+                </ul>
+                <!-- 
+                <br>
+                <p style="font-size: 30px; font-weight: bold;">Supervisor</p>
+                <p style="font-size:25px"><a href="https://tgac.carrd.co" target="_blank">Toronto Grace Alliance
+                        Church</a></p>
+                <p style="font-size:20px">July 2016 – July 2019</p>
+                <ul>
+                    <li>Assisted in leading and organizing the game activities</li>
+                </ul>
+
+                <br>
+                <p style="font-size: 30px; font-weight: bold;">Library Assistant</p>
+                <p style="font-size:25px"><a href="https://schoolweb.tdsb.on.ca/yorkview" target="_blank">Yorkview
+                        Public School</a></p>
+                <p style="font-size:20px">February - June 2018</p>
+                <ul>
+                    <li>Supervised and assisted elementary level students in a school computer lab</li>
+                    <li>Educated students on the basic use of Pixie graphic software and Dot&Dash robot systems</li>
+                    <li>Assisted in the preparation and set up activity stations for the school’s annual STEM night</li>
+                </ul> -->
+
+        </div>
+    </div>
+
+    <!-- Container (Skills Section) -->
+    <div id="skills" class="container-fluid bg-1">
+        <div class="text-left" data-aos="fade-in">
+            <h2>Skills</h2>
+            <br>
+            <div class="row slideanim">
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 128 128" width="50" height="50">
+                            <path fill="#0074BD"
+                                d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z">
+                            </path>
+                            <path fill="#EA2D2E"
+                                d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z">
+                            </path>
+                            <path fill="#0074BD"
+                                d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zm40.697 22.747c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z">
+                            </path>
+                            <path fill="#EA2D2E"
+                                d="M76.491 1.587S89.459 14.563 64.188 34.51c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815C58.041 28.42 81.722 22.195 76.491 1.587z">
+                            </path>
+                            <path fill="#0074BD"
+                                d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z">
+                            </path>
+                        </svg>
+
+                        <h4>Java</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 128 128" width="50" height="50">
+                            <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z">
+                            </path>
+                            <path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path>
+                            <path fill="#EBEBEB"
+                                d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z">
+                            </path>
+                            <path fill="#fff"
+                                d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z">
+                            </path>
+                        </svg>
+                        <h4>HTML</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 128 128" width="50" height="50">
+                            <path fill="#1572B6"
+                                d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z">
+                            </path>
+                            <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path>
+                            <path fill="#fff"
+                                d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z">
+                            </path>
+                            <path fill="#EBEBEB"
+                                d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z">
+                            </path>
+                            <path fill="#fff"
+                                d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z">
+                            </path>
+                            <path fill="#EBEBEB"
+                                d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z">
+                            </path>
+                        </svg>
+                        <h4>CSS</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 128 128" width="50" height="50" style="margin-right:5px">
+                            <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
+                            <path fill="#323330"
+                                d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z">
+                            </path>
+                        </svg>
+                        <h4>JavaScript</h4>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row slideanim">
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 128 128" width="55" height="50">
+                            <path fill="#659AD3"
+                                d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z">
+                            </path>
+                            <path fill="#03599C"
+                                d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z">
+                            </path>
+                            <path fill="#fff"
+                                d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z">
+                            </path>
+                        </svg>
+                        <h4>C</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 128 128" width="50" height="50">
+                            <path fill="#f58220"
+                                d="M27.35 80.52l10.68-68.44c.37-2.33 3.5-2.89 4.6-.8l11.48 21.48-26.76 47.76zm75.94 16.63L93.1 34.11c-.31-1.96-2.76-2.76-4.17-1.35L24.71 97.15l35.54 19.95a7.447 7.447 0 007.18 0l35.86-19.95zm-28.85-55L66.21 26.5c-.92-1.78-3.44-1.78-4.36 0L25.7 90.95l48.74-48.8z">
+                            </path>
+                        </svg>
+                        <h4>Firebase</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <img src="gcp.png" width="50" height="50" alt="" style="margin-right:5px">
+                        <h4>Google Cloud Platform</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 128 128" width="50" height="50" style="margin-right:5px">
+                            <g fill="#61DAFB">
+                                <circle cx="64" cy="64" r="11.4"></circle>
+                                <path
+                                    d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z">
+                                </path>
+                            </g>
+                        </svg>
+                        <h4>React</h4>
+                    </div>
+                </div>
+
+
+            </div>
+            <br>
+            <div class="row slideanim">
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <img src="androidStudio.png" width="50" height="50" alt="" style="margin-right:5px">
+                        <h4>Android Studio</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 128 128" width="55" height="55">
+                            <path fill="#0acf83"
+                                d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0">
+                            </path>
+                            <path fill="#a259ff"
+                                d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0"></path>
+                            <path fill="#f24e1e"
+                                d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0"></path>
+                            <path fill="#ff7262" d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0">
+                            </path>
+                            <path fill="#1abcfe"
+                                d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0">
+                            </path>
+                        </svg>
+                        <h4>Figma</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Third Container (Grid) 
+    style="border-color: lightgray; border-style: solid; border-width: 2px; border-height: 2px;
+    -->
+    <div class="container-fluid text-center" id="projects" data-aos="fade-in">
+        <div class="text-left">
+            <h2 class="margin">Projects</h3><br>
+                <div class="container" data-aos="fade-in">
+                    <h3 class="page-title text-center">Timeline</h3>
+                    <ul class="timeline">
+                        <li class="timeline-line"></li>
+                        <li class="timeline-group">
+                            <a href="#" class="btn btn-primary"><i class="fa fa-calendar"></i> 2021</a>
+                        </li>
+                    </ul>
+                    <ul class="timeline">
+                        <li class="timeline-line"></li>
+                        <li class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-badge"><a></a></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading" style="font-size:30px">
+                                    Missing People
+                                    <div class="timeline-date"><i class="fa fa-clock-o"></i> June 20th</div>
+                                </div>
+                                <div class="timeline-content">
+                                    <!-- <ul>
+                                        <li><code>CSS</code> added line 205 to 207 for <i>timeline date</i></li>
+                                        <li><code>CSS</code> changed line @ 269 from <i>1199px to 991px</i></li>
+                                        <li><code>HTML</code> + <code>CSS</code> and many more ... </li>
+                                    </ul> -->
+
+                                    <p>The project is design to allow people to report missing people in realtime. </p>
+                                    <p><strong>Tech Stack: </strong>HTML, CSS, JavaScript, Firebase</p>
+                                    <img src="missingPeople.jpg" class="img-responsive margin" style="width:100%;"
+                                        alt="Image">
+
+                                </div>
+                                <div class="timeline-footer">
+                                    <small class="text-muted">
+                                        <ul style="padding: 0px; margin-top: -10px; margin-bottom: -10px;">
+                                            <li class="socialMedia up"><a
+                                                    href="https://github.com/BaileyLuu/MissingPeople" target="_blank">
+                                                    <img alt="Github" title="Github Source Code" width="40px"
+                                                        src="https://image.flaticon.com/icons/png/512/733/733609.png"></a>
+                                            </li>
+                                            <li class="socialMedia up" style="padding: 0px;"><a
+                                                    href="https://www.youtube.com/watch?v=rqjyd3d6Hi4" target="_blank">
+                                                    <img alt="YouTube" title="YouTube Demo Video" width="50px"
+                                                        src="https://image.flaticon.com/icons/png/512/1384/1384060.png"></a>
+                                            </li>
+                                            <li class="socialMedia up" style="padding: 5px;"><a
+                                                    href="https://devpost.com/software/missingpeople" target="_blank">
+                                                    <img alt="Link" title="Link" width="43px"
+                                                        src="./assets/img/linkIcon.png"></a>
+                                            </li>
+                                        </ul>
+                                    </small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-badge"><a></a></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading" style="font-size:30px">Stop Asian Hate Now
+                                    <div class="timeline-date"><i class="fa fa-clock-o"></i>May 16th</div>
+                                </div>
+                                <div class="timeline-content">
+                                    <p>The project is designed to raise awareness of Asian hate crimes incidents that
+                                        happen at United States and Canada, ever since the beginning of COVID-19.</p>
+                                    <p><strong>Award: </strong>Best Use of Google Cloud</p>
+                                    <p>
+                                        <strong>Tech Stack: </strong>React, Firebase, Google Cloud Platform
+                                    </p>
+                                    <img src="stopAsianHateNow.jpg" class="img-responsive margin" style="width:100%"
+                                        alt="Image">
+                                </div>
+                                <div class="timeline-footer">
+                                    <small class="text-muted">
+                                        <ul style="padding: 0px;  margin-top: -10px; margin-bottom: -10px;">
+                                            <li class="socialMedia up"><a
+                                                    href="https://github.com/BaileyLuu/Stop-Asian-Hate" target="_blank">
+                                                    <img alt="Github" title="Github Source Code" width="40px"
+                                                        src="https://image.flaticon.com/icons/png/512/733/733609.png"></a>
+                                            </li>
+                                            <li class="socialMedia up" style="padding: 0px;"><a
+                                                    href="https://www.youtube.com/watch?v=5e3Vp-1lXa4" target="_blank">
+                                                    <img alt="YouTube" title="YouTube Demo Video" width="50px"
+                                                        src="https://image.flaticon.com/icons/png/512/1384/1384060.png"></a>
+                                            </li>
+                                            <li class="socialMedia up" style="padding: 5px;"><a
+                                                    href="https://devpost.com/software/stop-asian-hate-now"
+                                                    target="_blank"> <img alt="Link" title="Link" width="43px"
+                                                        src="./assets/img/linkIcon.png"></a>
+                                            </li>
+                                        </ul>
+                                    </small>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li class="timeline-item">
+                            <div class="timeline-badge"><a></a></div>
+                            <div class="timeline-panel">
+                                <div id="about" class="timeline-heading">About Timeline</div>
+                                <div class="timeline-content">
+                                    <p><img class="img-responsive" src="http://placeimg.com/640/240/people"></p>
+                                    <p>Rubber cheese say cheese bocconcini. Caerphilly cheese and biscuits squirty
+                                        cheese airedale lancashire cheese and biscuits rubber cheese squirty cheese.
+                                        Ricotta fromage frais port-salut danish fontina cream cheese queso edam ricotta.
+                                        Gouda monterey jack blue castello stilton rubber cheese.</p>
+                                </div>
+                            </div>
+                        </li> -->
+                        <li class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-badge"><a></a></div>
+                            <div class="timeline-panel">
+                                <div id="services" class="timeline-heading" style="font-size:30px">Go Home Now
+                                    <div class="timeline-date"><i class="fa fa-clock-o"></i>May 2nd</div>
+                                </div>
+                                <div class="timeline-content">
+                                
+                                    <p>The project is designed to guide people how to protect themselves from COVID-19.</p>
+                                    <p><strong>Award: </strong>Happy at Home</p>
+                                    <p><b>Tech Stack: </b>Unity</p>
+                                    
+                                    <img src="goHomeNow.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                                 </div>
+                                 <div class="timeline-footer">
+                                    <small class="text-muted">
+                                        <ul style="padding: 0px;  margin-top: -10px; margin-bottom: -10px;">
+                                            <li class="socialMedia up"><a
+                                                    href="https://github.com/BaileyLuu/Go-Home-Now" target="_blank">
+                                                    <img alt="Github" title="Github Source Code" width="40px"
+                                                        src="https://image.flaticon.com/icons/png/512/733/733609.png"></a>
+                                            </li>
+                                            <li class="socialMedia up" style="padding: 0px;"><a
+                                                    href="https://www.youtube.com/watch?v=AtTCHoavMIw" target="_blank">
+                                                    <img alt="YouTube" title="YouTube Demo Video" width="50px"
+                                                        src="https://image.flaticon.com/icons/png/512/1384/1384060.png"></a>
+                                            </li>
+                                            <li class="socialMedia up" style="padding: 5px;"><a
+                                                    href="https://devpost.com/software/go-home-now"
+                                                    target="_blank"> <img alt="Link" title="Link" width="43px"
+                                                        src="./assets/img/linkIcon.png"></a>
+                                            </li>
+                                        </ul>
+                                    </small>
+                                </div>
+
+                            </div>
+                              
+                            </div>
+                        </li>
+                        <!-- <li class="timeline-item">
+                            <div class="timeline-badge"><a></a></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">Media Timeline</div>
+                                <div class="timeline-content">
+                                    <p>Eu pid nunc urna integer, sed, cras tortor scelerisque penatibus facilisis a
+                                        pulvinar, rhoncus sagittis ut nunc elit! Sociis in et? Rhoncus, vel dignissim in
+                                        scelerisque. Dolor lacus pulvinar adipiscing adipiscing montes! Elementum risus
+                                        adipiscing non, cras scelerisque risus penatibus? Massa vut, habitasse,
+                                        tincidunt!</p>
+                                    <div class="timeline-embed">
+                                        <iframe width="478" height="320"
+                                            src="https://www.youtube.com/embed/G7q07dyIsX8?list=RDEMeI4zMDi6uvY6C8nWWWoZ1A&amp;showinfo=0"
+                                            frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- <li class="timeline-item">
+                            <div class="timeline-badge"><a href="#"></a></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">Contact Us Timeline</div>
+                                <div class="timeline-content">
+                                    <p>Eu pid nunc urna integer, sed, cras tortor scelerisque penatibus facilisis a
+                                        pulvinar, rhoncus sagittis ut nunc elit! Sociis in et? Rhoncus, vel dignissim in
+                                        scelerisque. Dolor lacus pulvinar adipiscing adipiscing montes! Elementum risus
+                                        adipiscing non, cras scelerisque risus penatibus? Massa vut, habitasse,
+                                        tincidunt!</p>
+                                    <div class="timeline-embed">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15936.386801163795!2d101.61008935000001!3d3.0688275999999997!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smy!4v1446881552869"
+                                            width="478" height="320" frameborder="0" style="border:0"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                    <!-- <ul class="timeline">
+                        <li class="timeline-line"></li>
+                        <li class="timeline-group">
+                            <a href="#" class="btn btn-primary"><i class="fa fa-calendar"></i> 2014</a>
+                        </li>
+                    </ul> -->
+
+                </div>
+
+                <!-- <div class="row">
+                <div class="col-sm-4">
+
+                    <p>The project is designed to guide people how to protect themselves from COVID-19.</p>
+                    <p><strong>Tech Stack: </strong>Unity</p>
+                    <img src="goHomeNow.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <p>The project is designed to raise awareness of Asian hate crimes incidents that happen at United States and Canada, ever since the beginning of COVID-19.</p>
+                    <p><strong>Tech Stack: </strong>React, Firebase, Google Cloud Platform</p>
+                    <img src="stopAsianHateNow.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                </div>
+                <div class="col-sm-4  ">
+                    <p>The project is design to allow people to report missing people in realtime. </p>
+                    <p><strong>Tech Stack: </strong>HTML, CSS, JavaScript, Firebase</p>
+                    <img src="missingPeople.jpg" class="img-responsive margin" style="width:100%;" alt="Image">
+                </div>
+            </div> -->
+                <!-- <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div> -->
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <ul style="padding:0px">
+            <li class="socialMedia up"><a href="https://www.linkedin.com/in/baileyluu/" target="_blank"> <img
+                        alt="LinkedIn" title="LinkedIn" width="50px"
+                        src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"></a></li>
+            <li class="socialMedia up"><a href="https://twitter.com/bailey_luu" target="_blank"><img alt="Twitter"
+                        title="Twitter" width="70px" src="https://cdn.worldvectorlogo.com/logos/twitter-6.svg"></a>
+            </li>
+            <li class="socialMedia up"><a href="https://www.instagram.com/bailey_btl/" target="_blank"> <img
+                        alt="Instagram" title="Instagram" width="50px"
+                        src="https://image.flaticon.com/icons/png/512/2111/2111463.png"></a></li>
+            <!-- <li class="socialMedia"><a href="mailto: bailey.luu30@gmail.com"> <img alt="gmail" title="Gmail" width="57px"
+        src="https://image.flaticon.com/icons/png/512/281/281769.png"></a></li> -->
+            <li class="socialMedia up"><a href="https://github.com/BaileyLuu" target="_blank"> <img alt="Github"
+                        title="Github" width="50px"
+                        src="https://image.flaticon.com/icons/png/512/733/733609.png"></a>
+            </li>
+            <li class="socialMedia up"><a href="https://devpost.com/bailey-luu30" target="_blank"> <img alt="Github"
+                title="Devpost" width="60px"
+                src="./assets/img/devpost.png"></a>
+    </li>
+        </ul>
+        <p>Made with ❤️</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 500,
+            duration: 800,
+            once: true
+        }
+
+        );
+    </script>
+</body>
+
+</html>
